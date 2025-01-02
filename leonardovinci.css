@@ -1,0 +1,62 @@
+body {
+    background-color: #f9f3eb;
+    font-family: 'Georgia', serif;
+}
+
+h1 {
+    font-family: 'Lucida Calligraphy', cursive;
+    color: #6c4a4a;
+}
+
+h2 {
+    font-family: 'Lucida Handwriting', cursive;
+    color: #6c4a4a;
+}
+
+.bio-section {
+    font-size: 1.2rem;
+    background-color: #b5926a;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.painting-card {
+    background-color: #f9f3eb;
+    border: 1px solid #b5926a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.painting-card img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Limit the image height */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    font-family: 'Lucida Bright', serif;
+    color: #6c4a4a;
+    font-weight: bold;
+}
+
+.card-text {
+    text-align: justify;
+    font-size: 0.95rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #6c4a4a;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}

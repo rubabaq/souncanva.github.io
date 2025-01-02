@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural And Historical Genre - Soul Canvas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Lucida+Calligraphy&family=Lucida+Handwriting&family=Lucida+Bright&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwSqsvGV6w3YTnyiJxEjo7HiVUlX9A9dp-CA&s') no-repeat center center fixed;
+            background-size: cover;
+            color: #4a3c2c;
+            font-family: 'Georgia', serif;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-family: 'Lucida Calligraphy', cursive;
+            color: #6c4a4a;
+        }
+
+        h2 {
+            font-family: 'Lucida Handwriting', cursive;
+            color: #6c4a4a;
+        }
+
+        .bio-section {
+            font-size: 1.2rem;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgba(181, 146, 106, 0.9);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .painting-card {
+            background-color: rgba(249, 243, 235, 0.9);
+            border: 1px solid #b5926a;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .painting-card img {
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            max-height: 400px; /* Limit the image height */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card-title {
+            font-family: 'Lucida Bright', serif;
+            color: #6c4a4a;
+            font-weight: bold;
+        }
+
+        .card-text {
+            text-align: justify;
+            font-size: 0.95rem;
+        }
+
+        .card-info {
+            margin-top: 15px;
+            font-size: 1rem;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #6c4a4a;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        .carousel {
+            position: relative;
+            height: 100vh;
+        }
+
+        .carousel-inner {
+            height: 100%;
+        }
+
+        .carousel-item {
+            height: 100vh;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+        }
+
+        .carousel-control-prev, .carousel-control-next {
+            display: none;
+        }
+
+        .carousel-control-prev-hover, .carousel-control-next-hover {
+            position: absolute;
+            top: 50%;
+            width: 5%;
+            height: 100%;
+            z-index: 1;
+            
+            cursor: pointer;
+        }
+
+        .carousel-control-prev-hover {
+            left: 0;
+        }
+
+        .carousel-control-next-hover {
+            right: 0;
+        }
+        nav {
+            background-color: wheat;
+            color: #6c4a4a;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            width: auto;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li {
+            position: relative;
+            display: inline-block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #6c4a4a;
+            padding: 10px 15px;
+            display: block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li a:hover {
+            background-color:#f9f3eb;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+       
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #f9f3eb;
+            min-width: 200px;
+            z-index: 1;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .dropdown a {
+            padding: 10px 15px;
+            display: block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .dropdown a:hover {
+            background-color: #f9f3eb;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li:hover .dropdown {
+            display: block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <h1 style="text-align: center; color: #5b3c1c; font-family: 'Dancing Script', cursive; font-size: 50px; font-style: italic; letter-spacing: 5px;">
+        SOUL&nbsp;&nbsp;CANVAS
+    </h1><nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="#">Art Genres</a>
+                    <ul class="dropdown">
+                        <li><a href="traditionalgenre.html">Traditional Genres</a></li>
+                        <li><a href="subjectmattergenre.html">Subject Matter</a></li>
+                        <li><a href="culturalandhistoricalgenre.html">Cultural and Historical Genres</a></li>
+                        <li><a href="contemporarygenre.html">Contemporary Genres</a></li>
+                        <li><a href="decorativeartgenre.html">Decorative Art</a></li>
+                       
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Artists</a>
+                    <ul class="dropdown">
+                        <li><a href="leonardovinci.html">Leonardo da Vinci</a></li>
+                        <li><a href="Michelangelo.html">Michelangelo Buonarroti</a></li>
+                        <li><a href="pablopicasso.html">Pablo Picasso</a></li>
+                        <li><a href="VincentvanGogh.html">Vincent van Gogh</a></li>
+                        <li><a href="ClaudeMonet.html">Claude Monet</a></li>
+                        <li><a href="RembrandtvanRijn.html">Rembrandt van Rijn</a></li>
+                        <li><a href="FridaKahlo.html">Frida Kahlo</a></li>
+                        <li><a href="HenriMatisse.html">Henri Matisse</a></li>
+                        <li><a href="Banksy.html">Banksy</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Art Galleries</a>
+                    <ul class="dropdown">
+                        <li><a href="Artgal.html">Artciti (Karachi, Pakistan)</a></li>
+                        <li><a href="artgal2.html">Clifton Art Gallery (Karachi, Pakistan)</a></li>
+                        <li><a href="artgal3.html">Louvre Museum (Paris, France)</a></li>
+                        <li><a href="moam.html">Museum of Modern Art (MoMA) (New York City, USA)</a></li>
+                        <li><a href="ng.html">National Gallery (London, UK)</a></li>
+                    </ul>
+                </li>
+                <li style="position: relative; display: inline-block;"><a href="Events.html" style="text-decoration: none; color: #6c4a4a; padding: 10px 15px; display: block;">Auctions and Exhibitions</a></li>
+                
+                
+                     <li><a href="signin.html" style="text-decoration: none; color: #ffffff; background-color: #6c4a4a; padding: 10px 20px; border: none; display: block; font-weight: bold; text-align: center;">SIGN UP/LOGIN</a></li>
+               
+            </ul>
+            </nav>
+        
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Cultural And Historical Genre</h1>
+
+        <div class="bio-section text-center">
+            <p>
+                The cultural and historical genre focuses on works that explore the traditions, values, and identity of a specific culture or delve into events and settings from the past. It may highlight the intersection of cultural heritage and historical context, providing insight into how societies evolve and respond to historical events. Examples include folklore, historical fiction, period dramas, and documentaries.
+            </p>
+        </div>
+
+        <!-- Carousel Section -->
+        <div id="artCarousel" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://cdn.britannica.com/04/181004-050-5AD597EA/Travelers-oil-canvas-collection-Meindert-Hobbema-Washington-1662.jpg" class="d-block w-100" alt="Traditional Calligraphy">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.mdpi.com/sustainability/sustainability-12-05472/article_deploy/html/images/sustainability-12-05472-g004.png" class="d-block w-100" alt="Arabic Calligraphy">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Giovanni_Paolo_Pannini_002.jpg/640px-Giovanni_Paolo_Pannini_002.jpg" class="d-block w-100" alt="Chinese Calligraphy">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://smarthistory.org/wp-content/uploads/2022/12/240578001.jpg" class="d-block w-100" alt="Chinese Calligraphy">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://d7hftxdivxxvm.cloudfront.net/?quality=80&resize_to=width&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FUBZn9Yeg2fA47x0QiEsANg%2Fnormalized.jpg&width=910" class="d-block w-100" alt="Chinese Calligraphy">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i0.wp.com/peterkostense.online/wp-content/uploads/2023/08/The-Harvesters-detail-1565-Pieter-Bruegel-the-Elder-Netherlandish-c.1525-1569-119x162cm-The-Metropolitan-Museum-of-Art-New-York-1.jpeg?resize=1108%2C737&ssl=1" class="d-block w-100" alt="Chinese Calligraphy">
+                </div>
+            </div>
+            <div class="carousel-control-prev-hover" id="prev" data-bs-slide="prev"></div>
+            <div class="carousel-control-next-hover" id="next" data-bs-slide="next"></div>
+        </div>
+
+        <h2 class="text-center mb-4">Welcome To The World Of Arts & Artists!</h2>
+
+        <div class="row" style="margin-bottom: 30px;">
+            <!-- Painting 1 -->
+            <div class="col-md-6">
+                <div class="card painting-card" style="height: 100%;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSKGDfB-3nGwfjg0LHFLPvYAEbJbXasRk1Qw&s" alt="The Raft Of the Medusa" style="height: 250px; object-fit: cover;">
+                    <div class="card-body" style="height: 100%;">
+                        <h5 class="card-title text-center">The Raft Of the Medusa</h5>
+                        <p class="card-text">
+                            "The Raft of the Medusa" is painted by Théodore Géricault in 1818-1819. The painting depicts the aftermath of the wreck of the French ship Méduse, highlighting the suffering of survivors. Géricault’s thought process was deeply influenced by the tragedy, as he researched firsthand accounts and even visited survivors. His aim was to evoke human suffering and dignity in the face of disaster, showcasing realism and emotional intensity. Géricault, a Romantic artist, focused on intense, dramatic moments, and the work became a symbol of human resilience and tragedy. The painting is now housed in the Louvre Museum.
+                        </p>
+                        <div class="card-info">
+                            <p><strong>Artist:</strong> Théodore Géricault</p>
+                            <p><strong>Estimated Value:</strong> $454</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Painting 2 -->
+            <div class="col-md-6">
+                <div class="card painting-card" style="height: 100%;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfbXvE8OafnZfMQ_am30LU3vWk2TdT30z_zA&s" alt="The Declaration of Independence" style="height: 250px; object-fit: cover;">
+                    <div class="card-body" style="height: 100%;">
+                        <h5 class="card-title text-center">The Declaration of Independence</h5>
+                        <p class="card-text">
+                            The Declaration of Independence, a famous painting by John Trumbull, was created in 1817. Trumbull was inspired by the idea of capturing a pivotal moment in American history—the signing of the Declaration of Independence. His painting highlights the moment when the Continental Congress members are presented with the document, focusing on the faces and gestures to convey the significance of the event. Trumbull's thought process was to convey the unity and purpose of the Founding Fathers. The artist, a soldier and painter, sought to immortalize the ideals of freedom and independence through a visual narrative that would inspire future generations.
+                        </p>
+                        <div class="card-info">
+                            <p><strong>Artist:</strong> John Trumbull</p>
+                            <p><strong>Estimated Value:</strong> $179</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row" style="margin-bottom: 30px;">
+            <!-- Painting 3 -->
+            <div class="col-md-6">
+                <div class="card painting-card" style="height: 100%;">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5497331ae4b0148a6141bd47/1449962220689-YJDRLMF6F5CU8V5C4BIO/1.jpg" class="card-img-top" alt="The Battle of Waterloo" style="height: 250px; object-fit: cover;">
+                    <div class="card-body" style="height: 100%;">
+                        <h5 class="card-title text-center">The Battle of Waterloo</h5>
+                        <p class="card-text">
+                            "The Battle of Waterloo" is by William Sadler, a British artist known for his historical scenes and dramatic landscapes. This painting depicts the decisive 1815 battle where Napoleon Bonaparte was defeated. Sadler’s use of vivid colors and dramatic lighting captures the intensity and chaos of the moment. His inspiration stemmed from the widespread fascination with the battle's significance in shaping European history. Sadler aimed to communicate both the grandeur and the turmoil of war, conveying the profound impact of this event on the continent. His attention to historical detail and emotional depth reflects his commitment to preserving key moments in history through art.
+                        </p>
+                        <div class="card-info">
+                            <p><strong>Artist:</strong> William Sadler</p>
+                            <p><strong>Estimated Value:</strong> $675</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Painting 4 -->
+            <div class="col-md-6">
+                <div class="card painting-card" style="height: 100%;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0VE9nsVnL414AGZvRIuPtXsv8OTVYbP1Deg&s" alt="The Burial of Count Orgaz" style="height: 250px; object-fit: cover;">
+                    <div class="card-body" style="height: 100%;">
+                        <h5 class="card-title text-center">The Burial of Count Orgaz</h5>
+                        <p class="card-text">
+                            The artist of The Burial of Count Orgaz is El Greco, a Greek-born painter who became a prominent figure in Spanish Renaissance art. The painting depicts the miraculous burial of Count Orgaz, a wealthy 16th-century nobleman, where both earthly and heavenly realms converge. El Greco’s use of elongated figures and dramatic light reflects his deep interest in spiritual themes, conveying a sense of divine intervention. Inspired by the local legend that the saintly intervention occurred at the Count’s funeral, the work also highlights El Greco’s fascination with the transcendence of the soul. The painting was commissioned for the Church of Santo Tomé in Toledo, Spain, and completed around 1586.
+                        </p>
+                        <div class="card-info">
+                            <p><strong>Artist:</strong> El Greco</p>
+                            <p><strong>Estimated Value:</strong> $334</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row" style="margin-bottom: 30px;">
+            <!-- Painting 5 -->
+            <div class="col-md-6">
+                <div class="card painting-card" style="height: 100%;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Jacques-Louis_David_-_The_Coronation_of_Napoleon_%281805-1807%29.jpg" alt="The Coronation of Napoleon" style="height: 250px; object-fit: cover;">
+                    <div class="card-body" style="height: 100%;">
+                        <h5 class="card-title text-center">The Coronation of Napoleon</h5>
+                        <p class="card-text">
+                            The artist of "The Coronation of Napoleon" is Jacques-Louis David, a renowned French neoclassical painter. David was a staunch supporter of Napoleon Bonaparte, and this monumental painting, created between 1805 and 1807, depicts Napoleon's coronation as Emperor of France in 1804. The composition captures a grand ceremonial moment, with Napoleon crowning his own empress, Josephine, symbolizing his absolute power. David’s meticulous attention to detail and use of classical forms highlight his skill and alignment with the era’s ideals, as well as his political loyalty to Napoleon. His thought process was deeply influenced by a desire to immortalize Napoleon's reign and promote his legacy.
+                        <div class="card-info">
+                            <p><strong>Artist:</strong> Louis David</p>
+                            <p><strong>Estimated Value:</strong> $59</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Painting 6 -->
+            <div class="col-md-6">
+                <div class="card painting-card" style="height: 100%;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrcnrzZwfom72siI0-SkoDycu-icyCK7OuDg&s" alt="The Battle of San Romano" style="height: 250px; object-fit: cover;">
+                    <div class="card-body" style="height: 100%;">
+                        <h5 class="card-title text-center">The Battle of San Romano</h5>
+                        <p class="card-text">
+                            The Battle of San Romano is a famous painting by Paolo Uccello, an Italian Renaissance artist known for his pioneering use of perspective. Uccello was inspired by the dramatic events of the Battle of San Romano, fought in 1432 between Florence and Siena. The artist captured the chaos of battle with dynamic compositions, vibrant colors, and a focus on geometric precision. Uccello's interest in perspective and geometry is evident in the way he portrays the figures and horses, showcasing his fascination with creating depth and three-dimensional space in a two-dimensional medium. The painting reflects the Renaissance ideals of realism and technical mastery.
+                        </p>
+                        <div class="card-info">
+                            <p><strong>Artist:</strong> Paolo Uccello</p>
+                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row" style="margin-bottom: 30px;">
+            <!-- Painting 7 -->
+            <div class="col-md-6">
+                <div class="card painting-card" style="height: 100%;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbTq2507A29RngcktH398gsZubWirAQgb9yg&s" class="card-img-top" alt="Washington Crossing the Delaware" style="height: 250px; object-fit: cover;">
+                    <div class="card-body" style="height: 100%;">
+                        <h5 class="card-title text-center">Washington Crossing the Delaware</h5>
+                        <p class="card-text">
+                            "Washington Crossing the Delaware" was painted by Emanuel Leutze in 1851. The artist's inspiration came from a desire to portray the bravery and determination of George Washington during the American Revolution, specifically during the pivotal crossing of the Delaware River in 1776. The scene emphasizes the dramatic moment of leadership and perseverance in the face of adversity. Leutze, a German-American artist, sought to inspire hope and patriotism, not only reflecting historical accuracy but also emphasizing symbolism, such as Washington's commanding presence. The painting became an iconic symbol of American resolve and strength.
+                        </p>
+                        <div class="card-info">
+                            <p><strong>Artist:</strong> Emanuel Leutze</p>
+                            <p><strong>Estimated Value:</strong> $39.9</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Painting 8 -->
+            <div class="col-md-6">
+                <div class="card painting-card" style="height: 100%;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF4ygeBfOPzENsDEvJLD7m7q52tRsNMX1llw&s" class="card-img-top" alt="The Fighting Temeraire" style="height: 250px; object-fit: cover;">
+                    <div class="card-body" style="height: 100%;">
+                        <h5 class="card-title text-center">The Fighting Temeraire</h5>
+                        <p class="card-text">   
+                            The artist of The Fighting Temeraire is J.M.W. Turner, a renowned English Romantic painter. The painting depicts the once-proud warship Temeraire being towed to its final destination to be dismantled, symbolizing the end of an era. Turner’s inspiration was driven by the idea of change and the passing of time, particularly reflecting on the industrial revolution's impact on British society. The image contrasts the majestic ship with the steam-powered tugboat, highlighting the transition from the old to the new. Turner’s use of light and color enhances the emotional weight of the piece, which is also a tribute to the country's naval history.
+                        </p>
+                        <div class="card-info">
+                            <p><strong>Artist:</strong> J.M.W Turner</p>
+                            <p><strong>Estimated Value:</strong> $47.5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+            
+
+    <footer>
+        <p>&copy; 2025 Soul Canvas. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

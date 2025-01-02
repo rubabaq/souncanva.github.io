@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frida Kahlo  - Soul Canvas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9f3eb;
+            font-family: 'Georgia', serif;
+        }
+
+        h1 {
+            font-family: 'Lucida Calligraphy', cursive;
+            color: #6c4a4a;
+        }
+
+        h2 {
+            font-family: 'Lucida Handwriting', cursive;
+            color: #6c4a4a;
+        }
+
+        .bio-section {
+            font-size: 1.2rem;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #b5926a;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .painting-card {
+            background-color: #f9f3eb;
+            border: 1px solid #b5926a;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .painting-card img {
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            max-height: 400px; /* Limit the image height */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card-title {
+            font-family: 'Lucida Bright', serif;
+            color: #6c4a4a;
+            font-weight: bold;
+        }
+
+        .card-text {
+            text-align: justify;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #6c4a4a;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        nav {
+            background-color: wheat;
+            color: #6c4a4a;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            width: auto;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li {
+            position: relative;
+            display: inline-block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #6c4a4a;
+            padding: 10px 15px;
+            display: block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li a:hover {
+            background-color:#f9f3eb;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+       
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #f9f3eb;
+            min-width: 200px;
+            z-index: 1;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .dropdown a {
+            padding: 10px 15px;
+            display: block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .dropdown a:hover {
+            background-color: #f9f3eb;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li:hover .dropdown {
+            display: block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <h1 style="text-align: center; color: #5b3c1c; font-family: 'Dancing Script', cursive; font-size: 50px; font-style: italic; letter-spacing: 5px;">
+        SOUL&nbsp;&nbsp;CANVAS
+    </h1><nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="#">Art Genres</a>
+                    <ul class="dropdown">
+                        <li><a href="traditionalgenre.html">Traditional Genres</a></li>
+                        <li><a href="subjectmattergenre.html">Subject Matter</a></li>
+                        <li><a href="culturalandhistoricalgenre.html">Cultural and Historical Genres</a></li>
+                        <li><a href="contemporarygenre.html">Contemporary Genres</a></li>
+                        <li><a href="decorativeartgenre.html">Decorative Art</a></li>
+                       
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Artists</a>
+                    <ul class="dropdown">
+                        <li><a href="leonardovinci.html">Leonardo da Vinci</a></li>
+                        <li><a href="Michelangelo.html">Michelangelo Buonarroti</a></li>
+                        <li><a href="pablopicasso.html">Pablo Picasso</a></li>
+                        <li><a href="VincentvanGogh.html">Vincent van Gogh</a></li>
+                        <li><a href="ClaudeMonet.html">Claude Monet</a></li>
+                        <li><a href="RembrandtvanRijn.html">Rembrandt van Rijn</a></li>
+                        <li><a href="FridaKahlo.html">Frida Kahlo</a></li>
+                        <li><a href="HenriMatisse.html">Henri Matisse</a></li>
+                        <li><a href="Banksy.html">Banksy</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Art Galleries</a>
+                    <ul class="dropdown">
+                        <li><a href="Artgal.html">Artciti (Karachi, Pakistan)</a></li>
+                        <li><a href="artgal2.html">Clifton Art Gallery (Karachi, Pakistan)</a></li>
+                        <li><a href="artgal3.html">Louvre Museum (Paris, France)</a></li>
+                        <li><a href="moam.html">Museum of Modern Art (MoMA) (New York City, USA)</a></li>
+                        <li><a href="ng.html">National Gallery (London, UK)</a></li>
+                    </ul>
+                </li>
+                <li style="position: relative; display: inline-block;"><a href="Events.html" style="text-decoration: none; color: #6c4a4a; padding: 10px 15px; display: block;">Auctions and Exhibitions</a></li>
+                
+                
+                     <li><a href="signin.html" style="text-decoration: none; color: #ffffff; background-color: #6c4a4a; padding: 10px 20px; border: none; display: block; font-weight: bold; text-align: center;">SIGN UP/LOGIN</a></li>
+               
+            </ul>
+            </nav>
+        
+    <div class="container mt-5">
+        <!-- Name Section -->
+        <h1 class="text-center mb-4">Frida Kahlo (1907–1954)</h1>
+
+        <!-- Bio Section -->
+        <div class="bio-section text-center">
+            <p>
+                Frida Kahlo was a Mexican painter known for her deeply personal and symbolic self-portraits. Her work blends surrealism, folk art, and realism. Born in Coyoacán, Mexico, Kahlo's life was marked by physical pain due to a bus accident and emotional turmoil. She often painted her suffering, both physical and psychological, in vivid, symbolic imagery. Her famous works include The Two Fridas, Self-Portrait with Thorn Necklace and Hummingbird, and The Broken Column.
+            </p>
+        </div>
+
+        <!-- Paintings Section -->
+        <h2 class="text-center mb-4">Frida’s Work</h2>
+
+        <div class="row">
+            <!-- Painting 1:  -->
+            <div class="col-md-12 mb-4">
+                <div class="card painting-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKdWgy183y18V8OE1gtzFo5K8yvCtIRhyO5g&s" class="card-img-top" alt="The Two Fridas">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">The Two Fridas</h5>
+                        <p class="card-text">
+                            The Two Fridas (1939) by Frida Kahlo depicts two versions of the artist sitting together, holding hands, with their hearts exposed. One Frida is dressed in traditional Mexican attire, while the other wears a European-style dress. The painting reflects Kahlo's emotional turmoil during her divorce from Diego Rivera, symbolizing her dual identity—caught between her Mexican heritage and European influences. The open hearts and connected hands evoke a sense of vulnerability and longing. Kahlo’s deeply personal exploration of pain, identity, and love is central to this iconic work.
+                        </p>
+                        <h5 class="text-center" style="color: #b5926a;">Estimated Value: $11.99</h5>
+                    </div>
+                </div>
+            </div>
+            
+<!-- Painting 2:  -->
+<div class="col-md-12 mb-4">
+    <div class="card painting-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLtc2DxH7EWPHe2HEqC5BSrnB_8zLj1QwRPA&s" class="card-img-top" alt="Self-portrait with thorn necklace and hummingbird">
+        <div class="card-body">
+            <h5 class="card-title text-center">Self-portrait With Thorn Necklace & Hummingbird</h5>
+            <p class="card-text">
+                Self-Portrait with Thorn Necklace and Hummingbird (1940) by Frida Kahlo captures the artist's emotional and physical suffering. The thorn necklace symbolizes pain and endurance, while the hummingbird, traditionally a symbol of love and joy, contrasts with the somber tone, perhaps reflecting her complex relationship with love and suffering. The painting conveys themes of resilience and the intertwining of beauty and pain. Kahlo often used her self-portraits to explore her identity, personal trauma, and cultural heritage, making this piece a powerful reflection of her inner world. Her life, marked by physical pain from a bus accident and tumultuous relationships, heavily influenced her art.
+            </p>
+            <h5 class="text-center" style="color: #b5926a;">Estimated Value: $53.5</h5>
+        </div>
+    </div>
+</div>
+
+
+     <!-- Painting 3:  -->
+<div class="col-md-12 mb-4">
+    <div class="card painting-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVI39DARDl-xQHSrLlTa7tKPLn84xIomP92g&s" class="card-img-top" alt="What the water gave me">
+        <div class="card-body">
+            <h5 class="card-title text-center">What The Water Gave Me</h5>
+            <p class="card-text">
+                "What the Water Gave Me" by Frida Kahlo is a surrealist painting that reflects her emotional and physical struggles. Created in 1938, it features a series of symbolic elements, including a figure emerging from water, representing the artist's personal pain, trauma, and vivid inner world. Kahlo drew inspiration from her own experiences, such as a severe bus accident and turbulent relationships. The painting channels her exploration of identity, suffering, and the connection between body and nature, showcasing her unique ability to express deep personal emotions through symbolic imagery.
+            </p>
+            <h5 class="text-center" style="color: #b5926a;">Estimated Value: $59</h5>
+        </div>
+    </div>
+</div>      
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Soul Canvas. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

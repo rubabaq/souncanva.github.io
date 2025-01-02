@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>SoulCanvas</title>
+    <script>
+        // Function to display a message when a menu item is clicked
+        function showMessage(message) {
+            alert(message);
+        }
+    </script>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #f9f3eb;
+            color: #6c4a4a;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            width: auto;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li {
+            position: relative;
+            display: inline-block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #6c4a4a;
+            padding: 10px 15px;
+            display: block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li a:hover {
+            background-color:#f9f3eb;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+       
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #f9f3eb;
+            min-width: 200px;
+            z-index: 1;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .dropdown a {
+            padding: 10px 15px;
+            display: block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .dropdown a:hover {
+            background-color: #f9f3eb;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li:hover .dropdown {
+            display: block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+    @media screen and (max-width: 768px) {
+        div[style*="font-size: 5vw"] {
+            font-size: 6vw;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        div[style*="font-size: 5vw"] {
+            font-size: 8vw;
+        }
+    }
+    </style>
+
+</head>
+<body style="background-color: wheat">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<h1 style="text-align: center; color: #5b3c1c; font-family: 'Dancing Script', cursive; font-size: 50px; font-style: italic; letter-spacing: 5px;">
+    SOUL&nbsp;&nbsp;CANVAS
+</h1><nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li>
+                <a href="#">Art Genres</a>
+                <ul class="dropdown">
+                    <li><a href="traditionalgenre.html">Traditional Genres</a></li>
+                    <li><a href="subjectmattergenre.html">Subject Matter</a></li>
+                    <li><a href="culturalandhistoricalgenre.html">Cultural and Historical Genres</a></li>
+                    <li><a href="contemporarygenre.html">Contemporary Genres</a></li>
+                    <li><a href="decorativeartgenre.html">Decorative Art</a></li>
+                   
+                </ul>
+            </li>
+            <li>
+                <a href="#">Artists</a>
+                <ul class="dropdown">
+                    <li><a href="leonardovinci.html">Leonardo da Vinci</a></li>
+                    <li><a href="Michelangelo.html">Michelangelo Buonarroti</a></li>
+                    <li><a href="pablopicasso.html">Pablo Picasso</a></li>
+                    <li><a href="VincentvanGogh.html">Vincent van Gogh</a></li>
+                    <li><a href="ClaudeMonet.html">Claude Monet</a></li>
+                    <li><a href="RembrandtvanRijn.html">Rembrandt van Rijn</a></li>
+                    <li><a href="FridaKahlo.html">Frida Kahlo</a></li>
+                    <li><a href="HenriMatisse.html">Henri Matisse</a></li>
+                    <li><a href="Banksy.html">Banksy</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Art Galleries</a>
+                <ul class="dropdown">
+                    <li><a href="Artgal.html">Artciti (Karachi, Pakistan)</a></li>
+                    <li><a href="artgal2.html">Clifton Art Gallery (Karachi, Pakistan)</a></li>
+                    <li><a href="artgal3.html">Louvre Museum (Paris, France)</a></li>
+                    <li><a href="moam.html">Museum of Modern Art (MoMA) (New York City, USA)</a></li>
+                    <li><a href="ng.html">National Gallery (London, UK)</a></li>
+                </ul>
+            </li>
+            <li style="position: relative; display: inline-block;"><a href="Events.html" style="text-decoration: none; color: #6c4a4a; padding: 10px 15px; display: block;">Auctions and Exhibitions</a></li>
+            
+            
+                 <li><a href="signin.html" style="text-decoration: none; color: #ffffff; background-color: #6c4a4a; padding: 10px 20px; border: none; display: block; font-weight: bold; text-align: center;">SIGN UP/LOGIN</a></li>
+           
+        </ul>
+        
+        <div style="position: relative; width: 100%; height: 40vw; overflow: hidden;">
+            <img 
+                src="https://cdn.pixabay.com/photo/2022/06/25/08/43/space-7283103_960_720.jpg" 
+                alt="Image" 
+                style="width: 100%; height: 100%; object-fit: cover; display: block;"
+            >
+            <div 
+                style="
+                    position: absolute; 
+                    top: 0; 
+                    left: 0; 
+                    width: 100%; 
+                    height: 100%; 
+                    background-color: #6c4a4a; 
+                    pointer-events: none; 
+                    opacity: 0.4;
+                ">
+            </div>
+            <div 
+                style="
+                    position: absolute; 
+                    top: 50%; 
+                    left: 50%; 
+                    transform: translate(-50%, -50%); 
+                    color: #EED9C4; 
+                    font-size: 5vw; 
+                    font-weight: bold; 
+                    text-align: center; 
+                    font-family: Lobster;
+                "
+            >
+                Art That Speaks,<br> Stories That Inspire!
+            </div>
+        </div>
+        
+        
+
+    <hr style="border: 1px solid#6c4a4a; width: auto; margin: 20px auto;">
+    <br>
+
+
+<h1 style="text-align: center;font-family: 'Times New Roman', Times, serif; color: #6c4a4a;"><u>FEATURED ARTISTS</u></h1>
+    <div style="display: flex; flex-wrap: wrap; gap: 5px; justify-content: center; font-family: 'Times New Roman', Times, serif; font-size: larger;color: #887D69;">
+        <div style="width: calc(33% - 20px); box-sizing: border-box; text-align: center;">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/portrait-of-leonardo-da-vinci-1452-1519-getty.jpg" alt="Product 1" style="width: 320px; height: 320px; border-radius: 8px; box-shadow: 0 4px 8px #887D69;">
+            <p>Leonardo DoVinchi</p>
+        </div>
+        <div style="width: calc(33% - 20px); box-sizing: border-box; text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Pablo_picasso_1.jpg/220px-Pablo_picasso_1.jpg" alt="Product 2" style="width: 320px; height: 320px; border-radius: 8px; box-shadow: 0 4px 8px #887D69;">
+            <p>Pablo Picasso</p>
+        </div>
+        <div style="width: calc(33% - 20px); box-sizing: border-box; text-align: center;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXggInu1KovhXRrEl7bzJV_Qz3shtDpRuyEQ&s" alt="Product 3" style="width: 320px; height: 320px; border-radius: 8px; box-shadow: #887D69;">
+            <p>Frida Kahlo</p>
+       </div>
+    </div>
+<br>
+    <hr style="border: 1px solid #6c4a4a; width: 65%; margin: 20px auto;">
+   <br>
+   <h1 style="text-align: center;font-family: 'Times New Roman', Times, serif; color: #6c4a4a;"><u>POPULAR ART GALLERIES</u></h1>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; font-family: 'Times New Roman', Times, serif; font-size: larger;color:#887D69">
+        <div style="width: calc(33% - 20px); box-sizing: border-box; text-align: center;">
+        <a href="artgal2.html">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/ff/32/67/getlstd-property-photo.jpg?w=300&h=300&s=1" alt="Product 1" style="width: 320px; height: 320px; border-radius: 8px; box-shadow: 0 4px 8px#887D69;">
+        </a>
+            <p>CLIFTON ART GALLERY</p>
+        </div>
+        <a href="artgal3.html">
+        <div style="width: calc(33% - 20px); box-sizing: border-box; text-align: center;">
+            <img src="https://images.squarespace-cdn.com/content/v1/56c13cc00442627a08632989/4608459b-9ffc-432f-ba22-75f919f475b5/LouvreTwilight.png" alt="Product 2" style="width: 320px; height: 320px; border-radius: 8px; box-shadow: 0 4px 8px #887D69;">
+        </a>
+            <p>LOUVRE ART GALLERY</p>
+        </div>
+        <div style="width: calc(33% - 20px); box-sizing: border-box; text-align: center;">
+            <a href="moam.html">
+            <img src="https://snoopy.archdaily.com/images/archdaily/media/images/523a/2a12/e8e4/4eef/7900/022c/slideshow/MoMA_Tim_Hursley_garden.jpg?1379543564&format=webp&width=640&height=429" alt="Product 3" style="width: 320px; height: 320px; border-radius: 8px; box-shadow: 0 4px 8px #887D69;">
+        </a>
+            <p>MUSEUM OF MODERN ART</p>
+
+       </div>
+    </div>
+    <br>
+    <hr style="border: 1px solid #6c4a4a; width: 65%; margin: 20px auto;">
+   <br>
+   <h1 style="text-align: center;font-family: 'Times New Roman', Times, serif; color: #6c4a4a;"><u>TRENDING ART GENRES</u></h1>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; font-family: 'Times New Roman', Times, serif; font-size: larger; color: #887D69;">
+        <div style="width: calc(33% - 20px); box-sizing: border-box; text-align: center;">
+            <a href="contemporarygenre.html">
+            <img src="https://cdn-fmjdd.nitrocdn.com/rkARelSHqyeyOgGbHqdlsRlHtmOFjOEr/assets/images/optimized/rev-20ba990/genesisimperialarts.com/wp-content/uploads/2022/11/painting-800x800.webp" alt="Product 1" style="width: 320px; height: 320px; border-radius: 8px; box-shadow: 0 4px 8px #887D69;">
+           </a>
+            <p>CONTEMPORARY ART</p>
+        </div>
+        <div style="width: calc(33% - 20px); box-sizing: border-box; text-align: center;">
+            <a href="culturalandhistoricalgenre.html">
+            <img src="https://cdn.britannica.com/39/939-050-070AB8C7/Lamentation-Giotto-Padua-Italy-Arena-Chapel.jpg?w=300" alt="Product 2" style="width: 320px; height: 320px; border-radius: 8px; box-shadow: 0 4px 8px #887D69;">
+            </a>
+            <p>CULTURAL AND HISTORICAL ART</p>
+        </div>
+        <div style="width: calc(33% - 20px); box-sizing: border-box; text-align: center;">
+            <a href="decorativeartgenre.html">
+            <img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/211443/476111/main-image" alt="Product 3" style="width: 320px; height: 320px; border-radius: 8px; box-shadow: 0 4px 8px#887D69;">
+            </a>
+            <p>DECORATIVE ART</p>
+       </div>
+    </div>
+    <br>
+    <hr style="border: 1px solid #6c4a4a; width: auto; margin: 20px auto;">
+   <br>
+   <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif;color: #6c4a4a;">ABOUT US </h1>
+   <p style="text-align: center; font-family: 'Times New Roman', Times, serif; color: #6c4a4a; font-size: 20px;">Welcome to our art gallery website, a vibrant online hub where creativity and culture come together in perfect harmony. Built with passion and a deep appreciation for the arts, our platform bridges the gap between talented artists, passionate art lovers, and curious minds seeking meaningful stories.
+
+    Step into a world of timeless masterpieces, where every brushstroke tells a tale, and every sculpture whispers secrets of its creation. Dive into the rich history of art, exploring the fascinating stories behind each artwork and uncovering the inspirations that brought these masterpieces to life. Our collection spans across diverse styles, eras, and cultures, offering something for everyone—from contemporary innovations to classic treasures that have stood the test of time.
+    
+    Whether you’re a seasoned collector, an enthusiastic admirer, or a student eager to learn, our website is designed with you in mind. Indulge in high-definition visuals that bring every detail to life, read heartfelt narratives that connect you to the artist's journey, and immerse yourself in the beauty and inspiration that art offers.
+    
+    Accessible anytime, anywhere, our platform aims to make art an inclusive experience. From guided tours to curated recommendations, we provide tools to help you discover new favorites, deepen your understanding, and share your passion with others. Let us be your gateway to a world where creativity knows no bounds and culture finds new expression every day.
+    
+    Join us in celebrating the magic of art, and let your imagination soar as you explore our gallery.</p>
+    <br>
+    <hr style="border: 1px solid#6c4a4a; width: auto; margin: 20px auto;">
+    
+     
+    <!-- Footer Section -->
+    <footer style="background-color: #6c4a4a; color: #fff; padding: 40px 20px; text-align: center; width: auto;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <!-- Contact Information -->
+            <div style="margin-bottom: 20px;">
+                <h3 style="margin: 0;">Contact Us</h3>
+                <p style="margin: 10px 0;">Email: costumersupport@soulcanva.com</p>
+                <p style="margin: 10px 0;">Phone: +92 (123) 456-789</p>
+                <p style="margin: 10px 0;">Address: 123 Street, Gulshan, Karachi</p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div style="margin-bottom: 20px;">
+                <h3 style="margin: 0;">Follow Us</h3>
+                <p style="margin: 10px 0;">
+                    <a href="#" style="color: #00aced; text-decoration: none; margin: 0 10px;"onclick="showMessage('Twitter service coming soon!')">Twitter</a> |
+                    <a href="#" style="color: #3b5998; text-decoration: none; margin: 0 10px;"onclick="showMessage('Facebook service coming soon!')">Facebook</a> |
+                    <a href="#" style="color: #c13584; text-decoration: none; margin: 0 10px;"onclick="showMessage('Instagram service coming soon!')">Instagram</a> |
+                    <a href="#" style="color: greenyellow; text-decoration: none; margin: 0 10px;"onclick="showMessage('WhatsApp service coming soon!')">WhatsApp</a>
+                </p>
+            </div>
+
+        
+
+            <!-- Subscribe Section -->
+            <div style="margin-bottom: 20px;">
+                <h3 style="margin: 0;">Subscribe for updates </h3>
+                <form style="margin: 20px 0;">
+                    <input type="email" placeholder="Enter your email" style="padding: 10px; width: 300px; max-width: 100%; border: none; border-radius: 4px;">
+                    <button type="submit" style="padding: 10px 20px; background-color: maroon; color: #fff; border: none; border-radius: 4px; cursor: pointer;">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+
+            <!-- Copyright -->
+            <div style="margin-top: 20px; font-size: 14px;">
+                <p>&copy; 2025 Soul Canvas. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>  
+</body>
+</html>

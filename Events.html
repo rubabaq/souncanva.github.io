@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events - SoulCanvas</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #EED9C4;
+            margin: 0;
+            padding: 0;
+            color: #6c4a4a;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif, cursive;
+            margin: 20px 0;
+            color: #6c4a4a;
+        }
+
+        .events-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .event-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .event-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .event-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .event-details h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #6c4a4a;
+        }
+
+        .event-details p {
+            margin: 5px 0;
+            color: #887D69;
+            font-size: 16px;
+            
+        }
+
+        .event-price {
+            font-size: 18px;
+            color: #6c4a4a;
+            font-weight: bold;
+        }
+
+        .event-btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #6c4a4a;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .event-btn:hover {
+            background-color: #887D69;
+        }
+        nav {
+            background-color: wheat;
+            color: #6c4a4a;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            width: auto;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li {
+            position: relative;
+            display: inline-block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #6c4a4a;
+            padding: 10px 15px;
+            display: block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li a:hover {
+            background-color:#f9f3eb;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+       
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #f9f3eb;
+            min-width: 200px;
+            z-index: 1;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .dropdown a {
+            padding: 10px 15px;
+            display: block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .dropdown a:hover {
+            background-color: #f9f3eb;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li:hover .dropdown {
+            display: block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <h1 style="text-align: center; color: #5b3c1c; font-family: 'Dancing Script', cursive; font-size: 50px; font-style: italic; letter-spacing: 5px;">
+        SOUL&nbsp;&nbsp;CANVAS
+    </h1><nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="#">Art Genres</a>
+                    <ul class="dropdown">
+                        <li><a href="traditionalgenre.html">Traditional Genres</a></li>
+                        <li><a href="subjectmattergenre.html">Subject Matter</a></li>
+                        <li><a href="culturalandhistoricalgenre.html">Cultural and Historical Genres</a></li>
+                        <li><a href="contemporarygenre.html">Contemporary Genres</a></li>
+                        <li><a href="decorativeartgenre.html">Decorative Art</a></li>
+                       
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Artists</a>
+                    <ul class="dropdown">
+                        <li><a href="leonardovinci.html">Leonardo da Vinci</a></li>
+                        <li><a href="Michelangelo.html">Michelangelo Buonarroti</a></li>
+                        <li><a href="pablopicasso.html">Pablo Picasso</a></li>
+                        <li><a href="VincentvanGogh.html">Vincent van Gogh</a></li>
+                        <li><a href="ClaudeMonet.html">Claude Monet</a></li>
+                        <li><a href="RembrandtvanRijn.html">Rembrandt van Rijn</a></li>
+                        <li><a href="FridaKahlo.html">Frida Kahlo</a></li>
+                        <li><a href="HenriMatisse.html">Henri Matisse</a></li>
+                        <li><a href="Banksy.html">Banksy</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Art Galleries</a>
+                    <ul class="dropdown">
+                        <li><a href="Artgal.html">Artciti (Karachi, Pakistan)</a></li>
+                        <li><a href="artgal2.html">Clifton Art Gallery (Karachi, Pakistan)</a></li>
+                        <li><a href="artgal3.html">Louvre Museum (Paris, France)</a></li>
+                        <li><a href="moam.html">Museum of Modern Art (MoMA) (New York City, USA)</a></li>
+                        <li><a href="ng.html">National Gallery (London, UK)</a></li>
+                    </ul>
+                </li>
+                <li style="position: relative; display: inline-block;"><a href="Events.html" style="text-decoration: none; color: #6c4a4a; padding: 10px 15px; display: block;">Auctions and Exhibitions</a></li>
+                
+                
+                     <li><a href="signin.html" style="text-decoration: none; color: #ffffff; background-color: #6c4a4a; padding: 10px 20px; border: none; display: block; font-weight: bold; text-align: center;">SIGN UP/LOGIN</a></li>
+               
+            </ul>
+            </nav>
+        
+    <h1><u>Upcoming Events</u></h1>
+
+    <div class="events-container">
+        
+        <div class="event-card">
+            <img src="https://i.pinimg.com/736x/ed/2a/10/ed2a10e42986ce50c3147f84e3627355.jpg" alt="Art Exhibition">
+            <div class="event-details">
+                <h2>Art Exhibition</h2>
+                <p><strong>Venue:</strong>  National Gallery, London</p>
+                <p><strong>Date:</strong> 12-13 Jan, 2025</p>
+                <p><strong>Time:</strong>  9:00 AM to 6:00 PM</p>
+                <p class="event-price">Ticket: Rs.2000</p>
+                <button class="event-btn" onclick="alert('Tickets will be available soon!')">Buy Tickets</button>
+            </div>
+        </div>
+
+     
+        <div class="event-card">
+            <img src="https://i.pinimg.com/736x/e4/8b/59/e48b594f4b9d405c66f9fb4c792fcebd.jpg" alt="Cultural Night">
+            <div class="event-details">
+                <h2>Cultural Night</h2>
+                <p><strong>Venue:</strong> Clifton Art Gallery, Karachi</p>
+                <p><strong>Date:</strong> 15-18 Feb, 2025</p>
+                <p><strong>Time:</strong> 5:00 PM to 1:00 AM</p>
+                <p class="event-price">Ticket: £30</p>
+                <button class="event-btn" onclick="alert('Tickets will be available soon!')">Buy Tickets</button>
+            </div>
+        </div>
+
+   
+        <div class="event-card">
+            <img src="https://external-preview.redd.it/exploring-the-vibrant-world-of-art-at-the-museum-of-modern-v0-zupx5QR-1iix3kcKM9jjAOmFmSaUz2CfukmcTNY_wLE.jpg?auto=webp&s=f8bead32c5f137354bc6fbcb610a9cea1fa7a74e" alt="Modern Art Showcase">
+            <div class="event-details">
+                <h2>Modern Art Showcase</h2>
+                <p><strong>Venue:</strong> Museum of Modern Art, New York</p>
+                <p><strong>Date:</strong> 10-11 Mar, 2025</p>
+                <p><strong>Time:</strong> 11:00 AM to 11:00 PM</p>
+                <p class="event-price">Ticket: $25</p>
+                <button class="event-btn" onclick="alert('Tickets will be available soon!')">Buy Tickets</button>
+            </div>
+        </div>
+
+     
+        <div class="event-card">
+            <img src="https://www.laurewanders.com/wp-content/uploads/2022/06/Famous-paintings-in-the-Louvre-3.jpg" alt="Art Auction">
+            <div class="event-details">
+                <h2>Art Auction</h2>
+                <p><strong>Venue:</strong> Louvre Museum, Paris</p>
+                <p><strong>Date:</strong> 5-8 April, 2025</p>
+                <p><strong>Time:</strong> 11:00 AM to 4:00 PM</p>
+                <p class="event-price">Ticket: €50</p>
+                <button class="event-btn" onclick="alert('Tickets will be available soon!')">Buy Tickets</button>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <img src="https://www.artnews.com/wp-content/uploads/2023/09/IN2509_003_CCCR-Press-Site-2000x1600-1.jpeg" alt="Art Auction">
+            <div class="event-details">
+                <h2>Art of Giants </h2>
+                <p><strong>Venue:</strong>Museum of Modern Art, New York</p>
+                <p><strong>Date:</strong>20-22 May, 2025</p>
+                <p><strong>Time:</strong> 4:00 PM to 12:00 AM</p>
+                <p class="event-price">Ticket: $50</p>
+                <button class="event-btn" onclick="alert('Tickets will be available soon!')">Buy Tickets</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelangelo Buonarroti - Soul Canvas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9f3eb;
+            font-family: 'Georgia', serif;
+        }
+
+        h1 {
+            font-family: 'Lucida Calligraphy', cursive;
+            color: #6c4a4a;
+        }
+
+        h2 {
+            font-family: 'Lucida Handwriting', cursive;
+            color: #6c4a4a;
+        }
+
+        .bio-section {
+            font-size: 1.2rem;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #b5926a;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .painting-card {
+            background-color: #f9f3eb;
+            border: 1px solid #b5926a;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .painting-card img {
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            max-height: 400px; /* Limit the image height */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card-title {
+            font-family: 'Lucida Bright', serif;
+            color: #6c4a4a;
+            font-weight: bold;
+        }
+
+        .card-text {
+            text-align: justify;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #6c4a4a;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        nav {
+            background-color: wheat;
+            color: #6c4a4a;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            width: auto;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li {
+            position: relative;
+            display: inline-block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #6c4a4a;
+            padding: 10px 15px;
+            display: block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li a:hover {
+            background-color:#f9f3eb;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+       
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #f9f3eb;
+            min-width: 200px;
+            z-index: 1;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .dropdown a {
+            padding: 10px 15px;
+            display: block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .dropdown a:hover {
+            background-color: #f9f3eb;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li:hover .dropdown {
+            display: block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <h1 style="text-align: center; color: #5b3c1c; font-family: 'Dancing Script', cursive; font-size: 50px; font-style: italic; letter-spacing: 5px;">
+        SOUL&nbsp;&nbsp;CANVAS
+    </h1><nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="#">Art Genres</a>
+                    <ul class="dropdown">
+                        <li><a href="traditionalgenre.html">Traditional Genres</a></li>
+                        <li><a href="subjectmattergenre.html">Subject Matter</a></li>
+                        <li><a href="culturalandhistoricalgenre.html">Cultural and Historical Genres</a></li>
+                        <li><a href="contemporarygenre.html">Contemporary Genres</a></li>
+                        <li><a href="decorativeartgenre.html">Decorative Art</a></li>
+                       
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Artists</a>
+                    <ul class="dropdown">
+                        <li><a href="leonardovinci.html">Leonardo da Vinci</a></li>
+                        <li><a href="Michelangelo.html">Michelangelo Buonarroti</a></li>
+                        <li><a href="pablopicasso.html">Pablo Picasso</a></li>
+                        <li><a href="VincentvanGogh.html">Vincent van Gogh</a></li>
+                        <li><a href="ClaudeMonet.html">Claude Monet</a></li>
+                        <li><a href="RembrandtvanRijn.html">Rembrandt van Rijn</a></li>
+                        <li><a href="FridaKahlo.html">Frida Kahlo</a></li>
+                        <li><a href="HenriMatisse.html">Henri Matisse</a></li>
+                        <li><a href="Banksy.html">Banksy</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Art Galleries</a>
+                    <ul class="dropdown">
+                        <li><a href="Artgal.html">Artciti (Karachi, Pakistan)</a></li>
+                        <li><a href="artgal2.html">Clifton Art Gallery (Karachi, Pakistan)</a></li>
+                        <li><a href="artgal3.html">Louvre Museum (Paris, France)</a></li>
+                        <li><a href="moam.html">Museum of Modern Art (MoMA) (New York City, USA)</a></li>
+                        <li><a href="ng.html">National Gallery (London, UK)</a></li>
+                    </ul>
+                </li>
+                <li style="position: relative; display: inline-block;"><a href="Events.html" style="text-decoration: none; color: #6c4a4a; padding: 10px 15px; display: block;">Auctions and Exhibitions</a></li>
+                
+                
+                     <li><a href="signin.html" style="text-decoration: none; color: #ffffff; background-color: #6c4a4a; padding: 10px 20px; border: none; display: block; font-weight: bold; text-align: center;">SIGN UP/LOGIN</a></li>
+               
+            </ul>
+            </nav>
+        
+    <div class="container mt-5">
+        <!-- Name Section -->
+        <h1 class="text-center mb-4">Michelangelo Buonarroti (1475–1564)</h1>
+
+        <!-- Bio Section -->
+        <div class="bio-section text-center">
+            <p>
+                
+Michelangelo was an Italian sculptor, painter, architect, and poet, considered one of the most influential artists of the Renaissance. He is best known for his work on the ceiling of the Sistine Chapel in the Vatican, which includes the famous Creation of Adam. His statue of David is one of the most iconic works of art. Michelangelo was not only a sculptor but also a brilliant architect, contributing to the design of St. Peter's Basilica in Rome.
+            </p>
+        </div>
+
+        <!-- Paintings Section -->
+        <h2 class="text-center mb-4">Michelangelo’s Work</h2>
+
+        <div class="row">
+            <!-- Painting 1:  -->
+            <div class="col-md-12 mb-4">
+                <div class="card painting-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/David_09.jpg/266px-David_09.jpg" class="card-img-top" alt="David">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">David</h5>
+                        <p class="card-text">
+                            Michelangelo’s David (1501-1504) reflects the artist’s mastery of human anatomy and his deep understanding of classical sculpture. Created as a symbol of Florence's strength and independence, it portrays the biblical hero David just before his battle with Goliath. Michelangelo’s inspiration was rooted in the belief that the marble block was already "alive," and his task was simply to release the figure from within. The statue's dynamic pose, detailed musculature, and intense expression highlight Michelangelo’s skill in conveying emotion and power through stone. Originally commissioned for the Florence Cathedral, David was later placed in the Palazzo della Signoria, becoming a symbol of the city’s republican ideals.
+                        </p>
+                        <h5 class="text-center" style="color: #b5926a;">Estimated Value: $38224</h5>
+                    </div>
+                </div>
+            </div>
+            
+<!-- Painting 2:  -->
+<div class="col-md-12 mb-4">
+    <div class="card painting-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT2987tw3mTDecAG8yu5_x8onL2UxhfwM0uA&s" class="card-img-top" alt="the dying slave">
+        <div class="card-body">
+            <h5 class="card-title text-center">The Dying Slave</h5>
+            <p class="card-text">
+                Michelangelo's The Dying Slave (1513-1516) was part of a series of sculptures intended for the tomb of Pope Julius II. The piece reflects the artist's exploration of human emotion and struggle, as the figure seems to be trapped in a state of tension between life and death. Michelangelo was deeply influenced by the idea of the soul’s liberation from the body, which is evident in the unfinished nature of the sculpture, emphasizing the figure's struggle for freedom. The work shows his mastery in conveying the human form and his philosophical approach to art. Michelangelo, one of the Renaissance's greatest artists, focused on capturing the rawness of human experience, often combining idealism with realism.
+            </p>
+            <h5 class="text-center" style="color: #b5926a;">Estimated Value: $4995</h5>
+        </div>
+    </div>
+</div>
+<!-- Painting 3:  -->
+<div class="col-md-12 mb-4">
+    <div class="card painting-card">
+        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="The rebellious slave">
+        <div class="card-body">
+            <h5 class="card-title text-center">The Rebellious Slave</h5>
+            <p class="card-text">
+                The Rebellious Slave by Michelangelo is a part of a series of unfinished sculptures intended for the tomb of Pope Julius II. The figure, which depicts a muscular man trapped in a block of marble, conveys a sense of struggle and defiance, reflecting Michelangelo's belief in the idea of "liberation" through art. The figure’s contorted posture and strained expression highlight his mastery of the human form, as well as his philosophical exploration of human freedom and conflict. Michelangelo’s inspiration stemmed from his view of sculpture as the act of releasing the figure from the stone, representing the inner struggle to break free.
+            </p>
+            <h5 class="text-center" style="color: #b5926a;">Estimated Value: $13500</h5>
+        </div>
+    </div>
+</div>
+           
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Soul Canvas. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
